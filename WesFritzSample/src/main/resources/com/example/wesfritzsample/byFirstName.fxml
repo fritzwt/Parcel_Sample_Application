@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1193.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wesfritzsample.controllers.byFirstNameController">
+    <children>
+        <Label alignment="CENTER" layoutX="341.0" prefHeight="75.0" prefWidth="217.0" text="Parcel Data">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="252.0" layoutY="57.0" prefHeight="37.0" prefWidth="395.0" text="Ordered by First Name (LLCs at Bottom)">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TableView fx:id="byFirstNameTableView" layoutX="14.0" layoutY="94.0" prefHeight="538.0" prefWidth="923.0">
+            <columns>
+                <TableColumn fx:id="bySNPin" prefWidth="98.0" text="Pin" />
+                <TableColumn fx:id="bySNAddress" prefWidth="168.0" text="Address" />
+                <TableColumn fx:id="bySNOwner" prefWidth="177.0" text="Owner" />
+                <TableColumn fx:id="bySNMarketValue" prefWidth="115.0" text="Market Value" />
+                <TableColumn fx:id="bySNSaleDate" prefWidth="122.0" text="Sale Date" />
+                <TableColumn fx:id="bySNSalePrice" prefWidth="120.0" text="Sale Price" />
+                <TableColumn fx:id="bySNLink" prefWidth="122.0" text="Link" />
+            </columns>
+        </TableView>
+        <Label alignment="CENTER" layoutX="953.0" layoutY="94.0" prefHeight="84.0" prefWidth="217.0" text="This table view displays all parcels in alphabetical order based on the owner's first name." textOverrun="WORD_ELLIPSIS" wrapText="true">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="953.0" layoutY="202.0" prefHeight="116.0" prefWidth="217.0" text="Viewing the data like this can be handy for user interfaces or records, making it easy for a customer to find their entry if they don't know their ID number." textOverrun="WORD_ELLIPSIS" wrapText="true">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Separator layoutX="953.0" layoutY="192.0" prefHeight="3.0" prefWidth="217.0" />
+        <Separator layoutX="953.0" layoutY="329.0" prefHeight="3.0" prefWidth="217.0" />
+        <Button fx:id="backToHomePageButton" layoutX="985.0" layoutY="547.0" mnemonicParsing="false" onAction="#onClickBackToHomePage" prefHeight="75.0" prefWidth="154.0" text="Back to Home Page">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+      <TextField fx:id="txtSearchOwnedParcels" layoutX="949.0" layoutY="404.0" onAction="#onTextSearchOwner" prefHeight="37.0" prefWidth="217.0" promptText="Owner + 'Enter' to Search" />
+      <Label layoutX="949.0" layoutY="330.0" prefHeight="67.0" prefWidth="217.0" text="Use this text field to search for owner names (can be a full or partial search):" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

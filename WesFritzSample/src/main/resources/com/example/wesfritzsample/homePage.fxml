@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wesfritzsample.controllers.homePageController">
+    <children>
+        <Label alignment="CENTER" layoutX="216.0" prefHeight="67.0" prefWidth="169.0" text="Welcome To:">
+            <font>
+                <Font name="Calibri" size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="166.0" layoutY="22.0" prefHeight="90.0" prefWidth="269.0" text="Mazama, WA" textFill="#2339e4">
+            <font>
+                <Font name="Bookman Old Style" size="36.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="116.0" layoutY="67.0" prefHeight="67.0" prefWidth="369.0" text="Parcels &amp; Market Information">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="165.0" fitWidth="369.0" layoutX="109.0" layoutY="118.0" pickOnBounds="true" preserveRatio="false">
+            <image>
+                <Image url="http://clipart-library.com/newhp/top-60-black-and-white-mountain-clip-art-vector-graphics-favorite-clipart-special-3.jpg"/>
+            </image>
+        </ImageView>
+        <Label layoutX="202.0" layoutY="369.0" prefHeight="24.0" prefWidth="199.0" text="Application Created By: Wesley Fritz" />
+        <Button fx:id="byStreetNameButton" layoutX="92.0" layoutY="320.0" mnemonicParsing="false" onAction="#onClickGoToStreetName" prefHeight="36.0" prefWidth="186.0" text="Street Name and Number">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Button fx:id="byFirstNameButton" layoutX="309.0" layoutY="320.0" mnemonicParsing="false" onAction="#onClickGoToFirstName" prefHeight="36.0" prefWidth="186.0" text="Owner's First Name">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Label layoutX="185.0" layoutY="285.0" text="View parcel information by:">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Button fx:id="exitAppButton" layoutX="528.0" layoutY="357.0" mnemonicParsing="false" onAction="#onClickExitApp" prefHeight="36.0" prefWidth="65.0" text="Exit" />
+    </children>
+</AnchorPane>
